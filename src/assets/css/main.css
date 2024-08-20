@@ -1,0 +1,42 @@
+@import "./button.css";
+@import "./form-control.css";
+@import "./input.css";
+@import "./select.css";
+@import "./health-insurance-form.css";
+
+html, body {
+    margin: 0;
+    font-family: GT-Walsheim, "Neue Helvetica W02", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+    margin: 0
+}
+
+.page {
+    padding: 64px 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: linear-gradient(155deg, rgb(11, 0, 74) 0%, rgb(0, 73, 184) 75%, rgb(48, 131, 236) 100%);
+}
+
+.card {
+    z-index: 1;
+    -webkit-box-flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+    flex: 1 1 0;
+    max-width: 460px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}

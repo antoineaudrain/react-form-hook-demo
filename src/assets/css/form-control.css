@@ -1,0 +1,15 @@
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-error {
+    color: #f36;
+    font-size: 0.875rem;
+}

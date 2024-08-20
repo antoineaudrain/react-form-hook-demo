@@ -1,0 +1,27 @@
+.select {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: GT-Walsheim, "Neue Helvetica W02", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    outline: 0;
+    padding: 15.25px 20px;
+    transition: box-shadow 0.2s, color 0.2s;
+    width: 100%;
+    line-height: normal;
+}
+
+.select:focus {
+    box-shadow: inset 0 0 0 1px #09f;
+    outline-width: 0;
+}
+
+.select-error {
+    box-shadow: inset 0 0 0 1px #f36 !important;
+    outline-width: 0;
+}
+
+.select-placeholder {
+    color: #757575
+}
