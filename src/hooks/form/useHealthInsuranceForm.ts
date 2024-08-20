@@ -70,7 +70,7 @@ export const useHealthInsuranceForm = (initialData?: Partial<HealthInsuranceForm
     } else if (planType === 'senior') {
       form.setValue('insurancePlan.coverageLevel', 'premium');
     }
-  }, [planType]);
+  }, [form, planType]);
 
   useEffect(() => {
     if (coverageLevel === 'basic') {
@@ -80,7 +80,7 @@ export const useHealthInsuranceForm = (initialData?: Partial<HealthInsuranceForm
     } else if (coverageLevel === 'premium') {
       form.setValue('insurancePlan.planType', 'senior');
     }
-  }, [coverageLevel]);
+  }, [form, coverageLevel]);
 
   const planTypeOptions = useMemo(() => [
     { value: 'individual', label: 'Individual' },
@@ -95,7 +95,7 @@ export const useHealthInsuranceForm = (initialData?: Partial<HealthInsuranceForm
       { value: 'standard', label: 'Standard', disabled: planType !== 'family' },
       { value: 'premium', label: 'Premium', disabled: planType !== 'senior' },
     ];
-  }, [form.watch('insurancePlan.planType')]);
+  }, [form]);
 
   return {
     ...form,

@@ -84,7 +84,7 @@ export const HealthInsuranceForm: React.FC = () => {
               </div>
             ))}
 
-            <Button type="button" onClick={addDependent} className="button-secondary">Add Dependent</Button>
+            <Button type="button" onClick={() => addDependent({ name: '', dateOfBirth: '', relationship: '' })} className="button-secondary">Add Dependent</Button>
           </>
         )}
       </div>
@@ -145,7 +145,7 @@ export const HealthInsuranceForm: React.FC = () => {
               </div>
             ))}
 
-            <Button type="button" onClick={addCondition} className="button-secondary">Add Condition</Button>
+            <Button type="button" onClick={() => addCondition({ conditionName: '', treatment: '', duration: '' })} className="button-secondary">Add Condition</Button>
           </>
         )}
 
@@ -170,7 +170,7 @@ export const HealthInsuranceForm: React.FC = () => {
               </div>
             ))}
 
-            <Button type="button" onClick={addMedication} className="button-secondary">Add Medication</Button>
+            <Button type="button" onClick={() => addMedication({ name: '', dosage: '', prescribingDoctor: '' })} className="button-secondary">Add Medication</Button>
           </>
         )}
       </div>
